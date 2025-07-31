@@ -33,6 +33,41 @@
   background-color: red;
 }
 
-.d {
-  list-style-type: lower-alpha;
+p {
+    line-height: 1.3;
+    font-size: medium;
 }
+
+ol {
+    line-height: 1.3;
+    font-size: medium;
+}
+
+
+ol.a li {
+    margin-bottom: 0.5em;
+    position: relative;
+    left: -0.5em;
+}
+
+ol.b {
+    counter-reset: list;
+}
+ol.b > li {
+    list-style: none;
+    position: relative;
+}
+ol.b > li:before {
+    counter-increment: list;
+    content: counter(list, lower-alpha) ") ";
+    position: absolute;
+    left: -1.5em;
+}
+
+ol.b li {
+    margin-bottom: 0.1em;
+}
+
+ol.b { 
+    list-style-type: lower-alpha;
+    }
