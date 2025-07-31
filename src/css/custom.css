@@ -33,4 +33,6 @@
   background-color: red;
 }
 
-ol.d {list-style-type: lower-alpha;}
+ol.d {
+  list-style-type: lower-alpha;
+}
